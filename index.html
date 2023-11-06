@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-2">Saint Shop</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#ofertas" class="nav-link">
+                            <i class="bi bi-bag-heart"></i>
+                            Ofertas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#colecoes" class="nav-link">
+                            <i class="bi bi-handbag"></i>
+                            Coleções
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-loja">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./slides/1.png" alt="Sacola de roupas">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./slides/2.png" alt="Mulher escolhendo sapatos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./slides/slide 3.png" alt="Mulher com sacola de roupas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./Fachada/frente-loja.png" class="d-block w-100 rounded" alt="Foto da fachada da loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a loja</span></h2>
+                            <p>
+                                Na Saint Shop, a moda é mais do que apenas vestir-se bem - é uma expressão de estilo pessoal, autoconfiança e individualidade. Nos orgulhamos de oferecer uma vasta e diversificada seleção de roupas, acessórios e calçados para atender a todos os gostos e necessidades. Nossa missão é ajudá-lo a criar um guarda-roupa que seja uma extensão autêntica de quem você é.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Acreditamos que a experiência de compra deve ser tão agradável quanto encontrar a peça perfeita. Nosso espaço é amplo e organizado de forma intuitiva, facilitando a navegação e a descoberta de roupas, acessórios e calçados. Os provadores são espaçosos e bem iluminados, garantindo que você se sinta confortável enquanto experimenta nossos produtos.
+                            <ul>
+                                <li>Ambiente sofisticado</li>
+                                <li>Variedade de estilos</li>
+                                <li>Atendimento personalizado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ofertas" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Confira <span class="text-colored">nossas ofertas</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./ofertas/vitrine 1.webp" alt="roupa vestido largo" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            50% OFF na 2º peça de menor valor
+                        </h3>
+                        <p>
+                            Você pode renovar seu guarda-roupa com estilo, sem esvaziar sua carteira. Confira nossas opções e economize ainda mais com a segunda peça pela metade do preço.
+                        </p>
+                        <button type="button" class="btn">Confira</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./ofertas/relogio mormaii.webp" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Relógios com até R$200 OFF
+                        </h3>
+                        <p>
+                            Nossas ofertas incluem uma ampla variedade de marcas e estilos, desde relógios de pulso elegantes até modelos esportivos e clássicos.
+                        </p>
+                        <button type="button" class="btn">Confira</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./ofertas/makeup.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Beleza com até 60% OFF
+                        </h3>
+                        <p>
+                            Descontos incríveis de até 60% em uma ampla variedade de produtos de beleza. De maquiagens à cuidados com a pele. Não perca esta chance, confira as ofertas.
+                        </p>
+                        <button type="button" class="btn">Confira</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="colecoes" class="pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nossa <span class="text-colored">Coleção</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-colecoes">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#feminino" class=" fw-bold text-start nav-link text-colored active">Feminino</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#masculino" class=" fw-bold text-start nav-link text-colored">Masculino</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class=" fw-bold text-start nav-link text-colored">Acessórios</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#beleza" class=" fw-bold text-start nav-link text-colored">Beleza</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#calcados" class=" fw-bold text-start nav-link text-colored">Calçados</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10" id="produtos">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="feminino">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/saia-longa.webp" alt="Vestido saia longa" />
+                                        <h5 class="text-colored fw-bold mt-2">Saia Longa Eavasê Em Tricoline Com Amarração E Pregas Rosa</h5>
+                                        <p class="fw-bold">
+                                            R$ 179,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/camisa-setim.webp" alt="Camisa setim" />
+                                        <h5 class="text-colored fw-bold mt-2">Camisa Em Cetim Com Recortes E Botões Rosa</h5>
+                                        <p class="fw-bold">
+                                            R$ 139,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/camisa-manga.webp" alt="Camisa com manga" />
+                                        <h5 class="text-colored fw-bold mt-2">Camisa Com Manga Bufante E Punho Largo Vermelho</h5>
+                                        <p class="fw-bold">
+                                            R$ 179,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/saida-midi.webp" alt="Saia midi" />
+                                        <h5 class="text-colored fw-bold mt-2">Saia Midi Em Viscolinho Com Amarração E Folhagem Estampada Bege</h5>
+                                        <p class="fw-bold">
+                                            R$ 179,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/macacao.webp" alt="Macacão longo" />
+                                        <h5 class="text-colored fw-bold mt-2">Macacão Longo Reto Em Viscose Com Busto Corsetado Azul</h5>
+                                        <p class="fw-bold">
+                                            R$ 299,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/camisa-manga-longa.webp" alt="Camisa manga longa" />
+                                        <h5 class="text-colored fw-bold mt-2">Camisa Manga Longa Acetinada Com Estampa Geométrica Verde</h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/short.webp" alt="Short" />
+                                        <h5 class="text-colored fw-bold mt-2">Short Clochard Cintura Alta Em Linho Listrado Com Amarração Por Faixa Bege</h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Feminino/vestido-shiffon.webp" alt="Vestido" />
+                                        <h5 class="text-colored fw-bold mt-2">Vestido Chiffon Manga Longa Com Estampa Floral Azul</h5>
+                                        <p class="fw-bold">
+                                            R$ 239,90
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="masculino">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/jaqueta.webp" alt="Jaqueta" />
+                                        <h5 class="text-colored fw-bold mt-2">Jaqueta Jeans Delavê Com Estampa De Grafite E Bolsos Azul Claro</h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/camisa-relaxed.webp" alt="Camisa" />
+                                        <h5 class="text-colored fw-bold mt-2">Camisa Relaxed Em Meia Malha Com Estampa De Listras Onduladas Preto</h5>
+                                        <p class="fw-bold">
+                                            R$ 139,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/regata.webp" alt="Regata" />
+                                        <h5 class="text-colored fw-bold mt-2">Regata Machão Em Meia Malha Com Lettering E Corte A Fio Preto</h5>
+                                        <p class="fw-bold">
+                                            R$ 29,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/calca-slim.webp" alt="Calça Slim" />
+                                        <h5 class="text-colored fw-bold mt-2">Calça Slim Cropped Em Sarja Com Bolsos Preto</h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/camisa-canhamo.webp" alt="Camisa canhamo" />
+                                        <h5 class="text-colored fw-bold mt-2">Camisa Relaxed Em Cânhamo Com Textura E Bolso Frontal Verde Claro</h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/camisa-tropical.webp" alt="Camisa tropical" />
+                                        <h5 class="text-colored fw-bold mt-2">Camisa Relaxed Com Estampa Tropical Ilhas Miragem E Bolso Frontal Off White</h5>
+                                        <p class="fw-bold">
+                                            R$ 139,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/calça-loose.webp" alt="Calça Loose" />
+                                        <h5 class="text-colored fw-bold mt-2">Calça Loose Jeans Resinado Com Costura Contrastante E Barra Dobrada Azul Escuro</h5>
+                                        <p class="fw-bold">
+                                            R$ 239,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Masculino/camisa-basica.webp" alt="Camisa branca basica" />
+                                        <h5 class="text-colored fw-bold mt-2">Camiseta Slim Básica Em Algodão Peruano Com Gola Redonda Branco</h5>
+                                        <p class="fw-bold">
+                                            R$ 69,90
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                    <div class="row">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/bolsa.webp" alt="Bolsa preta" />
+                                                <h5 class="text-colored fw-bold mt-2">Bolsa Shoulder Baguete Com Alça Estruturada Preto</h5>
+                                                <p class="fw-bold">
+                                                    R$ 139,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/oculos-de-sol.webp" alt="Ocúlos de sol" />
+                                                <h5 class="text-colored fw-bold mt-2">Óculos De Sol Quadrado Com Lente Rosa</h5>
+                                                <p class="fw-bold">
+                                                    R$ 69,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/carteira.webp" alt="Carteira" />
+                                                <h5 class="text-colored fw-bold mt-2">Carteira Dobrável Com Fechamento Por Ziper Marrom</h5>
+                                                <p class="fw-bold">
+                                                    R$ 45,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/oculos-redondo.webp" alt="Óculos redondo" />
+                                                <h5 class="text-colored fw-bold mt-2">Óculos De Sol Redondo Com Lentes Degrade Marrom</h5>
+                                                <p class="fw-bold">
+                                                    R$ 75,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/Nécessaire.webp" alt="Nécessaire" />
+                                                <h5 class="text-colored fw-bold mt-2">Nécessaire Maleta Em Tela Com Compartimentos E Alça De Mão Preto</h5>
+                                                <p class="fw-bold">
+                                                    R$ 75,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/Kit 4 Anéis.webp" alt="Kit com 4 anéis" />
+                                                <h5 class="text-colored fw-bold mt-2">Kit 4 Anéis Em Metal Em Modelos Diferenciados Dourado</h5>
+                                                <p class="fw-bold">
+                                                    R$ 35,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/cinto.webp" alt="Cinto estreito" />
+                                                <h5 class="text-colored fw-bold mt-2">Cinto Estreito Em Metal Com Corações De Strass Prata</h5>
+                                                <p class="fw-bold">
+                                                    R$ 115,90
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img class="d-block w-100" src="./acessorios/brincos.webp" alt="Brincos" />
+                                                <h5 class="text-colored fw-bold mt-2">Conjunto Brinco E Colar Em Metal Com Pingentes De Resina Triangular Dourado</h5>
+                                                <p class="fw-bold">
+                                                    R$ 69,90
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="tab-pane" id="beleza">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/solar.webp" alt="Protetor solar" />
+                                        <h5 class="text-colored fw-bold mt-2">Kit Amend Expertise Solar Defense Duo (2 Produtos) ÚNICO</h5>
+                                        <p class="fw-bold">
+                                            R$ 58,99
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/gel.webp" alt="Gel de limpeza" />
+                                        <h5 class="text-colored fw-bold mt-2">Gel De Limpeza 13% Tensoativos</h5>
+                                        <p class="fw-bold">
+                                            R$ 44,00
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/spray.webp" alt="Spray fixador" />
+                                        <h5 class="text-colored fw-bold mt-2">Kit Amend Valorize Mousse E Spray Fixador Forte (2 Produtos) ÚNICO</h5>
+                                        <p class="fw-bold">
+                                            R$ 83,99
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/oleo.webp" alt="Óleo" />
+                                        <h5 class="text-colored fw-bold mt-2">Amend Botanic Beauty Óleo De Moringa Leave-In Hidratante 180g                                        </h5>
+                                        <p class="fw-bold">
+                                            R$ 40,20
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/kit-capilar.webp" alt="Kit capilar" />
+                                        <h5 class="text-colored fw-bold mt-2">Amend Fica A Dica Kit - Cronograma Capilar 3 Máscaras ÚNICO</h5>
+                                        <p class="fw-bold">
+                                            R$ 74,51
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/mascara.webp" alt="Máscara" />
+                                        <h5 class="text-colored fw-bold mt-2">Amend Luxe Creations Extreme Repair Máscara 250g</h5>
+                                        <p class="fw-bold">
+                                            R$ 69,49
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/batom.webp" alt="Batom" />
+                                        <h5 class="text-colored fw-bold mt-2">Batom LÍquido Lip Tint Boca Rosa Payot Vermelho</h5>
+                                        <p class="fw-bold">
+                                            R$ 29,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./beleza/perfume.webp" alt="Perfume" />
+                                        <h5 class="text-colored fw-bold mt-2">Perfume 212 Vip Men Carolina Herrera Eau De Toilette 50ml</h5>
+                                        <p class="fw-bold">
+                                            R$ 359,90
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="calcados">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/sandalia.webp" alt="Sandália" />
+                                        <h5 class="text-colored fw-bold mt-2">Sandália Mule Com Tiras Em Vinil E Salto Bloco Bege</h5>
+                                        <p class="fw-bold">
+                                            R$ 119,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/sandalia-tira.webp" alt="Sandália com tira" />
+                                        <h5 class="text-colored fw-bold mt-2">Sandália Com Tira Em Macramê E Salto Bloco Anthracite</h5>
+                                        <p class="fw-bold">
+                                            R$ 99,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/tenis-jogging.webp" alt="Tênis jogging" />
+                                        <h5 class="text-colored fw-bold mt-2">Tênis Jogging Com Blocos De Cor E Costura Aparente Azul</h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/rasteira.webp" alt="Rasteira" />
+                                        <h5 class="text-colored fw-bold mt-2">Sandália Rasteira Em Couro Camurça Com Fivela Marrom                                        </h5>
+                                        <p class="fw-bold">
+                                            R$ 179,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/sapato.webp" alt="Sapato" />
+                                        <h5 class="text-colored fw-bold mt-2">Sapato Loafer Com Textura Croco E Bridão No Cabedal Hint Of Mint</h5>
+                                        <p class="fw-bold">
+                                            R$ 99,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/tenis-stampa.webp" alt="Tênis com estampa" />
+                                        <h5 class="text-colored fw-bold mt-2">Tênis Jogging Com Estampa Animal Print Bege</h5>
+                                        <p class="fw-bold">
+                                            R$ 219,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/tenis-knit.webp" alt="Tênis Knit" />
+                                        <h5 class="text-colored fw-bold mt-2">Tênis Jogging Knit Com Amarração Por Cadarço Bege
+                                        </h5>
+                                        <p class="fw-bold">
+                                            R$ 159,90
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./calçados/mocassim.webp" alt="Mocassim" />
+                                        <h5 class="text-colored fw-bold mt-2">Sapato Mocassim Com Sola Tratorada E Textura Croco Marrom
+                                        </h5>
+                                        <p class="fw-bold">
+                                            R$ 115,90
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea  class="form-control" id="mensagem" name="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 mt-4">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Projeto Loja Online, nº175, Bairro Shopping - Curitiba - PR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000')
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    mensagem: {
+                        required: true
+                    }
+                },
+                messages: {
+                    nome: 'Por favor, insira o seu nome',
+                    email: 'Por favor, insira o seu e-mail',
+                    mensagem: 'Por favor, digite a sua mensagem'
+                    
+                },
+                submitHandler: function(form) {
+                    console.log(form)
+                },
+                invalidHandler: function(evento, validador) {
+                    let camposIncorretos = validador.numberOfInvalids();
+                    if (camposIncorretos) {
+                        alert(`Existem ${camposIncorretos} campos incorretos`)
+                    }
+                }
+            })
+        })
+        
+    </script>
+</body>
+</html>
